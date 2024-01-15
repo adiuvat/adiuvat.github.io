@@ -2,7 +2,7 @@
 layout: post
 title:  "Leetcode practice 20231227- Permutations & Next permutations "
 categories: LeetCode
-tags:  LeetCode, dfs, Dynamic-Programming
+tags:  LeetCode dfs Dynamic-Programming
 author: Marcus
 catalog: yes
 ---
