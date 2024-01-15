@@ -7,18 +7,19 @@ author: Marcus
 catalog: yes
 ---
 
-[TOC]
+* content
+{:toc}
 
 # [Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description/)
 
-**Thoughts: **
+**Thoughts:**
 
 `dp[i][j]` stands for having `i` chances left to roll a sum of `j`
 $$
 dp[i][j] = \sum_{l = 1}^{k} dp[i-1][j-l]
 $$
 
-```Python
+```python
 class Solution:
     def numRollsToTarget(self, n: int, k: int, target: int) -> int:
         MOD = 10 ** 9 + 7
@@ -46,14 +47,14 @@ class Solution:
 
 # [Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/)
 
-思路：
+**思路：**
 1. 找出所有重复区间，用双指针可以很容易找到
 2. 计算每个区间的花费， 因为要花费最低，因此必然保留花费最大的那个，去掉剩下的。即sum-max
 
 优化：
 可以将两部合二为一，即在寻找区间的同时，维护这个区间内的sum和max，在区间结束后直接计算花费。
 
-``` python
+```python
 class Solution:
     def minCost(self, colors: str, neededTime: List[int]) -> int:
         N = len(colors)

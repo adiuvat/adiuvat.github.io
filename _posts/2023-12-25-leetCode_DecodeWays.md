@@ -27,7 +27,7 @@ DecodeNum(s) = DecodeNum(s[:n-1]) + DecodeNum(s[:n-2])
 
 **Code**
 
-```Python
+```python
 class Solution:
     def numDecodings(self, s: str) -> int:
         if s[0] == '0':
@@ -60,7 +60,7 @@ DecodeNum(s) = oneDigitWays * DecodeNum(s[:n-1]) +twoDigitWays * DecodeNum(s[:n-
 
 **Code:**
 
-```Python
+```python
 class Solution:
     def numDecodings(self, s: str) -> int:
         def calOneDigit(char):

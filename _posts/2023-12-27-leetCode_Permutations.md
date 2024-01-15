@@ -7,7 +7,8 @@ author: Marcus
 catalog: yes
 ---
 
-[TOC]
+* content
+{:toc}
 
 # [46. Permutations](https://leetcode.com/problems/permutations/)
 
@@ -55,8 +56,8 @@ https://www.geeksforgeeks.org/next-permutation/
 > 2531 - this can be incrased - the smallest number that can be used to incrase the 2 is 3. so for now we have 3521.
 > Next we want to minimize 3521 - thats easier - just sort the numbers to the right of 3 - 3125. So the answer is 433125
 
-```Python
-Python3
+
+```python
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
         """
@@ -83,5 +84,6 @@ class Solution:
             nums[j] = tmp
             # reverse the suffix in order to minimize it
             nums[i+1:] = nums[i+1:][::-1]
+
 ```
 
