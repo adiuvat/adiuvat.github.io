@@ -1,1 +1,8 @@
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+.vscode
 .history
+.idea
+.DS_Store
